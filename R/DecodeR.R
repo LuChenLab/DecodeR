@@ -11,7 +11,6 @@
 #' @importFrom data.table as.data.table
 #' @importFrom data.table melt.data.table
 #' @importFrom data.table .SD
-#' @importFrom data.table merge.data.table
 #' @importFrom data.table :=
 #' @export
 #'
