@@ -4,7 +4,14 @@
 \alias{DecodeR}
 \title{Barcode Prediction}
 \usage{
-DecodeR(fast5, model, NT = 1, cutoff = 0, include.lowest = FALSE)
+DecodeR(
+  fast5,
+  model,
+  NT = 1,
+  cutoff = 0,
+  include.lowest = FALSE,
+  clear = FALSE
+)
 }
 \arguments{
 \item{fast5}{path to a fast5 file}
@@ -13,7 +20,11 @@ DecodeR(fast5, model, NT = 1, cutoff = 0, include.lowest = FALSE)
 
 \item{NT}{the number of cores to use, i.e. at most how many child processes will be run simultaneously.}
 
-\item{cutoff}{the cutoff of minimum probability for classified reads}
+\item{cutoff}{the cutoff of minimum probability for classified reads, high for accuracy, low for recovery}
+
+\item{include.lowest}{include.lowest of cutoff}
+
+\item{clear}{TRUE for a clear output}
 }
 \description{
 Barcode Prediction

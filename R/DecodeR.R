@@ -6,7 +6,9 @@
 #' @param fast5 path to a fast5 file
 #' @param NT the number of cores to use, i.e. at most how many child processes will be run simultaneously.
 #' @param model a trained model for prediction
-#' @param cutoff the cutoff of minimum probability for classified reads
+#' @param cutoff the cutoff of minimum probability for classified reads, high for accuracy, low for recovery
+#' @param include.lowest include.lowest of cutoff
+#' @param clear TRUE for a clear output
 #'
 #' @importFrom data.table as.data.table
 #' @importFrom data.table melt.data.table
@@ -25,7 +27,7 @@
 #' pred2 <- DecodeR(fast5 = fast5file, model = Model_2barcodes, cutoff = 0.8)
 #' table(pred2$Barcode)
 
-DecodeR <- function(fast5, model, NT = 1, cutoff = 0, include.lowest = FALSE) {
+DecodeR <- function(fast5, model, NT = 1, cutoff = 0, include.lowest = FALSE, clear = FALSE) {
   barcodeSigsBinMat <- BarcodeSegment(file = fast5, NT = NT)
   pred <- predict(model, barcodeSigsBinMat, type = "prob")
   pred <- as.data.table(pred, keep.rownames = "Read")
@@ -36,5 +38,10 @@ DecodeR <- function(fast5, model, NT = 1, cutoff = 0, include.lowest = FALSE) {
   } else {
     PPs[Probability <= cutoff, Barcode := "unclassified"]
   }
-  return(PPs)
+
+  if(clear) {
+    return(PPs)
+  } else {
+    return(merge(pred, PPs, by = "Read"))
+  }
 }
