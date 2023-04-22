@@ -19,13 +19,13 @@ You can install the released version of DecodeR from GitHub with:
 
 ```R
 if (!require(remotes)) install.packaages("remotes")
-remotes::install_github("tangchao7498/DecodeR")
+remotes::install_github("ChaoTang-SCU/DecodeR")
 ```
 
 ## Examples
 
 ```R
-library(PorexploreR)
+library(DecodeR)
 
 # get example file from package
 fast5file <- system.file("extdata/demo2_0.fast5", package = "DecodeR")
