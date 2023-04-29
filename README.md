@@ -8,7 +8,7 @@ The raw current signals were extracted from fast5 files using R package [rhdf5](
 
 A matrix of 100 columns generated from all barcodes was eventually used for model training. The R package [caret](https://CRAN.R-project.org/package=caret) was implemented to streamline the process to produce the predictive models based on the Random Forest and other classification models. To prevent overfitting, we applied the repeated K-fold cross-validation (10-fold, repeated 10 times) method for resampling. To increase the computational efficiency of model training, we employed a parallel processing framework supported by R package [doParallel](https://CRAN.R-project.org/package=doParallel). Because the read numbers of each barcode were different, we used downSample function from R package *caret* to randomly sample a data set so that all classified groups have the same frequency. Next, we used 70% of these reads as a training set and the rest of the reads were used as a test set. 
 
-![image-20230429083910995](/Users/tangchao/Library/Application Support/typora-user-images/image-20230429083910995.png)
+![image1](./inst/extdata/image1.png)
 
 ## Requirements
 
