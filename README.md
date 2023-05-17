@@ -28,7 +28,7 @@ You can install the released version of DecodeR from GitHub with:
 
 ```R
 if (!require(remotes)) install.packaages("remotes")
-remotes::install_github("ChaoTang-SCU/DecodeR")
+remotes::install_github("ChaoTang-SCU/DecodeR") # about 1 minute
 ```
 
 ## Examples
@@ -43,17 +43,21 @@ fast5file <- system.file("extdata/demo2_0.fast5", package = "DecodeR")
 data("Model_2barcodes")
 
 # predict the barcode of example fast5 file
-pred <- DecodeR(fast5 = fast5file, model = Model_2barcodes)
+pred <- DecodeR(fast5 = fast5file, model = Model_2barcodes) # about 10 seconds
 
 # histogram of predicted probability
 hist(pred$Probability, xlab = "Probability", main = "Histogram of Probability")
 
 # number of each barcode
 table(pred$Barcode)
-
+# RTA-33 RTA-35
+#     39     19
 # set cutoff for unclassified read
 pred2 <- DecodeR(fast5 = fast5file, model = Model_2barcodes, cutoff = 0.8)
 table(pred2$Barcode)
+#      RTA-33       RTA-35 unclassified
+#          37           19            2
+
 ```
 
 ## Models
