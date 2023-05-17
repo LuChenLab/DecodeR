@@ -38,7 +38,6 @@ DecodeR <- function(fast5, model, NT = 1, cutoff = 0, include.lowest = FALSE, cl
   } else {
     PPs[Probability <= cutoff, Barcode := "unclassified"]
   }
-
   if(clear) {
     return(PPs)
   } else {

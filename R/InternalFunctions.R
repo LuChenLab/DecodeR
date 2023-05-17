@@ -59,7 +59,6 @@ BarcodeSegment <- function(file, NT, length = 20000, MinLength = 10, ChangePoint
         }
       }
     }
-
     if(!is.null(BCSs)) {
       if(length(BCSs) < 2100) {
         BCSs <- NULL
