@@ -58,6 +58,30 @@ table(pred2$Barcode)
 #      RTA-33       RTA-35 unclassified
 #          37           19            2
 
+# systems
+sessionInfo()
+# R version 4.1.0 (2021-05-18)
+# Platform: x86_64-apple-darwin17.0 (64-bit)
+# Running under: macOS Big Sur 10.16
+# 
+# Matrix products: default
+# BLAS:   /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRblas.dylib
+# LAPACK: /Library/Frameworks/R.framework/Versions/4.1/Resources/lib/libRlapack.dylib
+# 
+# locale:
+# [1] zh_CN.UTF-8/zh_CN.UTF-8/zh_CN.UTF-8/C/zh_CN.UTF-8/zh_CN.UTF-8
+# 
+# attached base packages:
+# [1] stats     graphics  grDevices utils     datasets  methods   base
+# 
+# other attached packages:
+# [1] DecodeR_0.1.0
+# 
+# loaded via a namespace (and not attached):
+# [1] zoo_1.8-9          compiler_4.1.0     parallel_4.1.0     rhdf5_2.36.0
+# [5] xts_0.12.1         curl_4.3.2         rhdf5filters_1.4.0 grid_4.1.0
+# [9] data.table_1.14.0  changepoint_2.2.2  TTR_0.24.2         smoother_1.1
+# [13] lattice_0.20-44    Rhdf5lib_1.14.2
 ```
 
 ## Models
