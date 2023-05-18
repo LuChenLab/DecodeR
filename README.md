@@ -1,6 +1,6 @@
 # DecodeR: an R package for barcode demultiplexing of nanopore direct RNA sequencing
 
-Direct RNA sequencing offers a more comprehensive and accurate characterization of RNA biology. However, the main limitations of high-throughput direct RNA sequencing are the RNA amounts and the high cost required for sequencing and the lack of efficient multiplexing methods. Here, we propose a robust and fast multiplexing machine learning pipeline, ·`DecodeR`, offering basic and clinical research of RNA features in a cost-effective manner.
+Direct RNA sequencing offers a more comprehensive and accurate characterization of RNA biology. However, the main limitations of high-throughput direct RNA sequencing are the RNA amounts and the high cost required for sequencing and the lack of efficient multiplexing methods. Here, we propose a robust and fast multiplexing machine learning pipeline, `DecodeR`, offering basic and clinical research of RNA features in a cost-effective manner.
 
 ## Contents
 
