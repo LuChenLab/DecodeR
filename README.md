@@ -9,9 +9,9 @@ Direct RNA sequencing offers a more comprehensive and accurate characterization 
 - [Installation](#Installation)
 - [Demo](#demo)
 - [Models](#Models)
-- [Citing DecodeR](#CitingDecodeR)
+- [Citing](#Citing)
 - [License](#LICENSE)
-- [Additional information](#Additionalinformation)
+- [Supplementary](#Supplementary)
 
 
 
@@ -226,7 +226,7 @@ Other pre-trainded models for 4, 6, 8, 10, 12, 18 and 24 barcodes can be downloa
 
 
 
-## <span id="CitingDecodeR">Citing DecodeR</span>
+## <span id="Citing">Citing</span>
 
 A pre-print is going to be uploaded soon.
 
@@ -238,7 +238,7 @@ GNU General Public License v3.0
 
 
 
-## <span id="Additionalinformation">Additional information</span>
+## <span id="Supplementary">Supplementary</span>
 
 #### How to build barcoded direct RNA sequencing libraries:
 
