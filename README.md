@@ -88,14 +88,14 @@ install.packages(c('changepoint', 'data.table', 'randomForest', 'smoother', 'car
 BiocManager::install("rhdf5")
 ```
 
-Then, users can install the released version of DecodeR from GitHub with:
+Then, users can install the released version of `DecodeR` from GitHub with:
 
 ```R
 if (!require(remotes)) install.packaages("remotes")
 remotes::install_github("ChaoTang-SCU/DecodeR")
 ```
 
-Or, download the compressed .zip source file from this repository and install  `DecodeR` by command line:
+Or, download the compressed .tar.gz source file from this repository and install  `DecodeR` by command line:
 
 ```shell
 R CMD INSTALL DecodeR_0.1.0.tar.gz
